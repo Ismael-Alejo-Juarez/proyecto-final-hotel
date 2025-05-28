@@ -1,0 +1,94 @@
+#contenido-main {
+    width: 90%;
+    min-height: 100vh;
+    margin: 20px 0;
+}
+
+/* Este contenedor es el primero que sale en la página */
+#contenedor-frase {
+    border: 1px solid #4d82bc;
+    border-radius: 12px;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #005187;
+    color: #FFF;
+}
+
+/* Usado en títulos */
+.divisor-linea {
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+/* Diseño de todos las secciones - Plantilla */
+.secciones {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.titulo-seccion {
+    padding: 0 20px;
+}
+
+.contenedor-hbt-total {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.hbt-contenedor img {
+    border-radius: 10px;
+    width: 100%;
+    height: 130px;
+    align-self: center;
+}
+
+.hbt-contenedor {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+}
+
+/* Estos contenedores estarán ocultos hasta que las queries se activen */
+.contenedor-tres, .contenedor-cuatro{
+    display: none;
+}
+
+.btn-reservar{
+    width: 40%;
+    color: #FFF;
+    background-color: #005187;
+    border: 1px solid #c4dafa;
+    border-radius: 5px;
+    align-self: center;
+    margin: 10px 0 0 0;
+    padding: 5px 0;
+}
+
+/* Fondos de cada sección */
+#ofertas-especiales{
+    background-image: url(images/fondo-ofertas.jpg);
+}
+
+#familiares{
+    background-image: url(images/fondo-familiar.jpg);
+}
+
+#ofertas-especiales, #familiares{
+    background-size: cover;
+    border: 1px solid #c4dafa;
+    box-shadow: 0px 0px 20px #4d82bc99;
+}
+
+#todo-incluido, #economicas{
+    border: none;
+}

@@ -1,0 +1,47 @@
+@media (max-width: 1360px) {
+    /* Cambian el contenedor para que los otros contenedores sean visibles */
+    .contenedor-hbt-total {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /* Estos contenedores estarán ocultos hasta que las queries se activen */
+    .contenedor-tres,
+    .contenedor-cuatro {
+        display: flex;
+    }
+}
+
+@media (max-width: 1300px) {
+    /**/
+    .contenedor-hbt-total {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* Aquí solo uno. El otro aún cabe */
+    .contenedor-cuatro {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+    /**/
+    .contenedor-hbt-total {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /**/
+    .contenedor-tres,
+    .contenedor-cuatro {
+        display: none;
+    }
+}
+
+/* Botones */
+.btn-reservar:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+    background: linear-gradient(#005187, #005e9c);
+}

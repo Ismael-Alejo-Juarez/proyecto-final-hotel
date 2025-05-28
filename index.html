@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/bodypage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/building.png" type="image/x-icon">
+    <link rel="stylesheet" href="queries.css">
+    <title>Hotel - Página Principal</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- <div> representa el logo del hotel -->
+        <a href="" id="logo-hotel" class="texto-g fuente-t">
+            <img src="icons/building.png" alt="">
+            <span class="texto-g fuente-t hotel-texto"> Hotel </span>
+        </a>
+        <!-- Lado derecho: Mi cuenta, Mis reservaciones -->
+        <!-- Mi cuenta -->
+        <a href="html/login.html" id="mi-cuenta">
+            <img src="icons/user.png" alt="">
+            <span class="texto-g fuente-m mi-cuenta-texto"> Mi cuenta </span>
+        </a>
+        <!-- Mis reservaciones -->
+        <a href="" id="mis-reservaciones">
+            <img src="icons/shopping-cart-buyer.png" alt="">
+            <span class="texto-g fuente-m mis-reservaciones-texto"> Mis reservaciones </span>
+        </a>
+    </header>
+    <!-- Todo el contenido -->
+    <main>
+        <div id="contenido-main">
+            <!-- Primera frase - eslogan de la página -->
+            <div id="contenedor-frase">
+                <span class="texto-g fuente-t"> La esencia del océano en cada rincón </span>
+                <span class="texto-g fuente-g"> Comienza a explorar 🡣 </span>
+            </div>
+            <!-- Primera sección mostrada al usuario -->
+            <div id="ofertas-especiales" class="secciones">
+                <div id="" class="titulo-seccion hbt-ofertas">
+                    <span class="texto-g fuente-t"> Ofertas especiales: </span>
+                    <hr class="divisor-linea">
+                </div>
+                <div id="contenedor-hbt-especiales" class="contenedor-hbt-total">
+                    <!-- ¿La API debería cargar esto? -->
+                    <div class="habitacion-especial hbt-contenedor">
+                        <!-- Toda la información cambia al recibir el API -->
+                        <img src="images/1.jpg" alt="">
+                        <span class="texto-g fuente-g">Nombre de la habitación</span>
+                        <span class="texto-g fuente-m">Categoría</span>
+                        <span class="texto-g fuente-m">Capacidad</span>
+                        <span class="texto-g fuente-m"> precio de antes <span class="texto-g fuente-g"> Precio de la
+                                habitación</span></span>
+                        <button type="button" id="especial-uno" class="texto-g fuente-m btn-reservar"> Reservar </button>
+                    </div>
+                    <!-- Por ahora solo ocupo uno de prueba -->
+                </div>
+            </div>
+            <!-- Fin primera sección -->
+            <!-- Segunda sección - Todo incluido -->
+            <div id="todo-incluido" class="secciones">
+                <div class="titulo-seccion hbt-todo-incluido">
+                    <span class="texto-g fuente-t"> Todo incluido: </span>
+                    <hr class="divisor-linea">
+                </div>
+                <div id="contenedor-hbt-incluido" class="contenedor-hbt-total">
+                    <div class="habitacion-incluido hbt-contenedor">
+                        <img src="images/5.jpg" alt="">
+                        <span class="texto-g fuente-g">Nombre de la habitación</span>
+                        <span class="texto-g fuente-m">Categoría</span>
+                        <span class="texto-g fuente-m">Capacidad</span>
+                        <span class="texto-g fuente-g"> Precio de la habitación</span>
+                        <button type="button" id="incluido-uno" class="texto-g fuente-m btn-reservar"> Reservar </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de la segunda sección. Una más -->
+            <!-- Tercera sección - Habitaciones familiares -->
+            <div id="familiares" class="secciones">
+                <div class="titulo-seccion hbt-familiares">
+                    <span class="texto-g fuente-t"> Para toda la familia: </span>
+                    <hr class="divisor-linea">
+                </div>
+                <div id="contenedor-hbt-familiares" class="contenedor-hbt-total">
+                    <!-- ¿La API debería cargar esto? -->
+                    <div class="habitacion-familiar hbt-contenedor">
+                        <img src="images/9.jpg" alt="">
+                        <span class="texto-g fuente-g">Nombre de la habitación</span>
+                        <span class="texto-g fuente-m">Categoría</span>
+                        <span class="texto-g fuente-m">Capacidad</span>
+                        <span class="texto-g fuente-g"> Precio de la habitación</span>
+                        <button type="button" id="familiar-uno" class="texto-g fuente-m btn-reservar"> Reservar </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de la tercera sección -->
+            <!-- Última sección - Económicas -->
+            <div id="economicas" class="secciones">
+                <div class="titulo-seccion hbt-economicas">
+                    <span class="texto-g fuente-t"> Económicas: </span>
+                    <hr class="divisor-linea">
+                </div>
+                <div id="contenedor-hbt-economicas" class="contenedor-hbt-total">
+                    <div class="habitacion-economica hbt-contenedor">
+                        <img src="images/13.jpg" alt="">
+                        <span class="texto-g fuente-g">Nombre de la habitación</span>
+                        <span class="texto-g fuente-m">Categoría</span>
+                        <span class="texto-g fuente-m">Capacidad</span>
+                        <span class="texto-g fuente-g"> Precio de la habitación</span>
+                        <button type="button" id="economica-uno" class="texto-g fuente-m btn-reservar"> Reservar </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de las habitaciones -->
+        </div>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <div id="redes-sociales">
+            <a href="https://facebook.com" target="_blank">
+                <img src="icons/facebook.png" alt="" class="img-footer facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="icons/instagram.png" alt="" class="img-footer instagram">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="icons/twitter.png" alt="" class="img-footer twitter">
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <img src="icons/whatsapp.png" alt="" class="img-footer whatsapp">
+            </a>
+        </div>
+        <div id="contactos">
+            <span class="texto-g fuente-p"> hoteles@company.com </span>
+        </div>
+        <div id="copyrigth">
+            <span class="texto-g fuente-p"> @2025 - Todos los derechos reservados </span>
+        </div>
+    </footer>
+</body>
+
+</html>
