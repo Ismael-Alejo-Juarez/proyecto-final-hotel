@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Jost-Regular";
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Jost-Bold";
+    src: url(../fonts/Jost-Bold.ttf);
+}
+
+.texto-g {
+    font-family: "Jost-Regular";
+}
+
+.fuente-t {
+    font-family: "Jost-Bold";
+    font-size: 25px;
+}
+
+.fuente-p {
+    font-size: 14px;
+}
+
+.fuente-m {
+    font-size: 16px;
+}
+
+.fuente-g {
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #4d82bc;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#logo-hotel,
+#mi-cuenta,
+#mis-reservaciones {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#logo-hotel {
+    left: 15px;
+}
+
+#mi-cuenta {
+    right: 15px;
+}
+
+#mis-reservaciones {
+    right: 150px;
+    display: none;
+}
+
+#logo-hotel img,
+#mi-cuenta img,
+#mis-reservaciones img {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: #4d82bc;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#redes-sociales,
+#contactos {
+    margin-bottom: 5px;
+}
+
+#redes-sociales a {
+    margin: 0 10px;
+}
+
+.img-footer {
+    width: 25px;
+}

@@ -1,0 +1,88 @@
+/* Cambiamos el fondo del main */
+main{
+    background-image: url(../images/fondo-login.jpg);
+    background-size: cover;
+}
+
+header{
+    box-shadow: 0px 10px 20px #c4dafaAA;
+}
+
+footer{
+    box-shadow: 0px -10px 20px #c4dafa55;
+}
+
+#formulario-contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+#formulario{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    color: #005187;
+    background-color: #fcffff;
+    padding: 30px;
+    margin: 50px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fcffff66;
+}
+
+/* Incuye título, error y mensaje de cuenta */
+.texto-centrado{
+    text-align: center;
+}
+
+/* Este va a desaparecer */
+.error{
+    color: #ea0802;
+    display: none;
+}
+
+#formulario label{
+    margin: 0 0 5px 0;
+}
+
+#formulario input{
+    margin: 0 0 10px 0;
+    border: 1px solid #c4dafa;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: #005187;
+}
+
+.buttons-div{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-div button{
+    margin: 5px 10px 10px 10px;
+    color: #FFF;
+    background-color: #005187;
+    border: 1px solid #c4dafa;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.buttons-div button:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+    background: linear-gradient(#005187, #005e9c);
+}
+
+#formulario input:focus{
+    border-color: #005e9c;
+    outline: none;
+}
+
+input::placeholder{
+    opacity: 0.4;
+    color: #005187;
+}
