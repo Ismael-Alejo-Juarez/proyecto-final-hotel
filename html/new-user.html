@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/bodypage.css">
+    <link rel="stylesheet" href="../styles/formpage.css">
+    <link rel="shortcut icon" href="../icons/building.png" type="image/x-icon">
+    <title>Hotel - Nuevo Usuario</title>
+</head>
+
+<body>
+    <header>
+        <!-- <div> representa el logo del hotel -->
+        <a href="../index.html" id="logo-hotel" class="texto-g fuente-t">
+            <img src="../icons/building.png" alt="">
+            <span class="texto-g fuente-t hotel-texto"> Hotel </span>
+        </a>
+        <!-- Lado derecho: Mi cuenta, Mis reservaciones
+        · Mi cuenta - Desactivada en registros e inicios de sesión
+        · Mis reservaciones - Está hasta que se registra alguien, así que también se va -->
+    </header>
+    <main>
+        <div id="formulario-contenedor">
+            <form id="formulario">
+                <h3 id="titulo-form" class="texto-g fuente-t texto-centrado"> Agregar usuario </h3>
+                <!-- Crear usuario -->
+                <label id="label-usuario" for="usuario-inp" class="texto-g fuente-g"> Crea tu usuario: </label>
+                <input type="text" id="usuario-inp" class="texto-g fuente-g">
+                <label id="error-usuario" class="error texto-g fuente-m" for=""> Usuario - error </label>
+                <!-- Crear contraseña -->
+                <label id="label-pass" for="pass-inp" class="texto-g fuente-g"> Crea tu contraseña: </label>
+                <input type="password" id="pass-inp" class="texto-g fuente-g">
+                <label id="error-pass" for="" class="error texto-g fuente-m"> Error - pass </label>
+                <!-- Confirmar contraseña -->
+                <label id="label-pass" for="cnpass-inp" class="texto-g fuente-g"> Confirma tu contraseña: </label>
+                <input type="password" id="cnpass-inp" class="texto-g fuente-g">
+                <label id="error-cnpass" for="" class="error texto-g fuente-m"> Error - cnpass </label>
+                <!-- Escribir telefono -->
+                <label id="label-usuario" for="usuario-inp" class="texto-g fuente-g"> Número de teléfono: </label>
+                <input type="text" id="telefono-inp" class="texto-g fuente-g" placeholder="Ej. 6341096149">
+                <label id="error-tel" for="" class="texto-g fuente-m error"> Error - tel </label>
+                <div class="buttons-div">
+                    <button type="button" id="cancelar-registro" class="texto-g fuente-g">Cancelar</button>
+                    <button type="button" id="aceptar-registro" class="texto-g fuente-g">Aceptar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="redes-sociales">
+            <a href="https://facebook.com" target="_blank">
+                <img src="../icons/facebook.png" alt="" class="img-footer facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="../icons/instagram.png" alt="" class="img-footer instagram">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="../icons/twitter.png" alt="" class="img-footer twitter">
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <img src="../icons/whatsapp.png" alt="" class="img-footer whatsapp">
+            </a>
+        </div>
+        <div id="contactos">
+            <span class="texto-g fuente-p"> hoteles@company.com </span>
+        </div>
+        <div id="copyrigth">
+            <span class="texto-g fuente-p"> @2025 - Todos los derechos reservados </span>
+        </div>
+    </footer>
+    <script src="../scripts/new-user.js"></script>
+</body>
+
+</html>
