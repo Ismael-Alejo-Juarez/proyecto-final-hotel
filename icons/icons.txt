@@ -1,2 +1,0 @@
-# Icons
-Carpeta para guardar los iconos

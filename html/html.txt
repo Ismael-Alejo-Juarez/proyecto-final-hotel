@@ -1,2 +1,0 @@
-# HTML
-Guardar todos los demás archivos HTML
